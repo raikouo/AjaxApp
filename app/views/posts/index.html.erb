@@ -1,7 +1,7 @@
 <h1>Top Page</h1>
 <%= link_to '新規登録','/posts/new'%>
 <% @posts.each do |post| %>
-  <div class="post">
+  <div class="post" data-id=<%= post.id %> deta-check=<%= post.checked %>>
     <div class="post-date">
       投稿日時：<%=post.created_at%>
     </div>
